@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Portfolio — Brand, Event & Lifestyle | Studio Meron</title>
+  <meta name="description" content="I outgrew my Instagram highlights... so here's my creative portfolio showcasing all my developing skills in different art forms.">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .photo-intro {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 5rem 2rem 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .photo-intro blockquote {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 600;
+      line-height: 1.4;
+      color: var(--dark);
+      border-left: 4px solid var(--orange);
+      padding-left: 1.5rem;
+    }
+
+    .photo-intro p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .photo-categories {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    .photo-cat {
+      padding: 0.45rem 1rem;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: var(--dark);
+      color: var(--white);
+      border-radius: 100px;
+    }
+
+    @media (max-width: 768px) {
+      .photo-intro { grid-template-columns: 1fr; gap: 2rem; padding: 3rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Studio Meron</a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav__drop">
+          <a href="portfolio.html" class="is-active">Portfolios</a>
+          <div class="nav__drop-menu">
+            <a href="interior-design.html">Interior Design</a>
+            <a href="photography.html">Photography</a>
+          </div>
+        </li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="social-media.html">Social Media</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolios</a>
+    <a href="interior-design.html">Interior Design</a>
+    <a href="photography.html">Photography</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="social-media.html">Social Media</a>
+  </div>
+
+  <!-- ── Page Hero ──────────────────────────────────────── -->
+  <header class="page-hero">
+    <div class="page-hero__inner">
+      <span class="eyebrow eyebrow--light">Portfolio</span>
+      <h1>Photography</h1>
+      <p>Brand, event, and lifestyle photography — capturing moments that matter.</p>
+    </div>
+  </header>
+
+  <!-- ── Intro ──────────────────────────────────────────── -->
+  <div class="photo-intro" style="padding-top:4rem;">
+    <blockquote>
+      "I outgrew my Instagram highlights… so here's my creative portfolio."
+    </blockquote>
+    <div>
+      <p>Showcasing all my developing skills across different art forms — from intimate lifestyle shots to high-energy event coverage and polished brand photography.</p>
+      <div class="photo-categories">
+        <span class="photo-cat">Brand</span>
+        <span class="photo-cat">Event</span>
+        <span class="photo-cat">Lifestyle</span>
+        <span class="photo-cat">Portrait</span>
+        <span class="photo-cat">Editorial</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Gallery ────────────────────────────────────────── -->
+  <section class="section" style="padding-top:2rem;">
+    <div class="container">
+      <!-- Row 1 — tall + wide -->
+      <div style="display:grid;grid-template-columns:1fr 2fr;gap:0.75rem;margin-bottom:0.75rem;">
+        <div class="gallery-item"><div class="ph ph--tall" data-label="Brand Shoot"></div></div>
+        <div class="gallery-item"><div class="ph" data-label="Event Coverage" style="aspect-ratio:4/3;"></div></div>
+      </div>
+
+      <!-- Row 2 — 4 col -->
+      <div class="gallery-grid gallery-grid--4" style="margin-bottom:0.75rem;">
+        <div class="gallery-item"><div class="ph ph--tall" data-label="Portrait"></div></div>
+        <div class="gallery-item"><div class="ph ph--tall" data-label="Lifestyle"></div></div>
+        <div class="gallery-item"><div class="ph ph--tall" data-label="Editorial"></div></div>
+        <div class="gallery-item"><div class="ph ph--tall" data-label="Detail Shot"></div></div>
+      </div>
+
+      <!-- Row 3 — wide + tall -->
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:0.75rem;margin-bottom:0.75rem;">
+        <div class="gallery-item"><div class="ph" data-label="Event — Wide" style="aspect-ratio:4/3;"></div></div>
+        <div class="gallery-item"><div class="ph ph--tall" data-label="Brand Portrait"></div></div>
+      </div>
+
+      <!-- Row 4 — 3 col -->
+      <div class="gallery-grid">
+        <div class="gallery-item"><div class="ph ph--tall" data-label="Lifestyle Moment"></div></div>
+        <div class="gallery-item"><div class="ph ph--tall" data-label="Product Shot"></div></div>
+        <div class="gallery-item"><div class="ph ph--tall" data-label="Creative Edit"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ────────────────────────────────────────────── -->
+  <section class="cta-section">
+    <h2>Book a Shoot</h2>
+    <p>Looking for a photographer for your brand, event, or next creative project? Let's connect.</p>
+    <a href="mailto:hello@meronsiyoum.com" class="btn">Get In Touch</a>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__logo">Studio Meron</div>
+    <nav class="footer__links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolios</a>
+      <a href="interior-design.html">Interior Design</a>
+      <a href="photography.html">Photography</a>
+      <a href="social-media.html">Social Media</a>
+    </nav>
+    <p class="footer__copy">© 2025 Studio Meron. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
