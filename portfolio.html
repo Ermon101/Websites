@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolios — Interior Design, Set Design & Creative Direction | Studio Meron</title>
+  <meta name="description" content="Explore Studio Meron's portfolio featuring interior design, creative direction, set design, photography, and visual storytelling projects for brands and individuals.">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .portfolio-intro {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+    }
+
+    .portfolio-intro h2 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin-bottom: 1rem;
+    }
+
+    .portfolio-intro p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    /* 2x2 + 1 wide layout */
+    .portfolio-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 1rem;
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .portfolio-layout .portfolio-card:nth-child(5) {
+      grid-column: 1 / -1;
+    }
+
+    @media (max-width: 600px) {
+      .portfolio-layout { grid-template-columns: 1fr; }
+      .portfolio-layout .portfolio-card:nth-child(5) { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Studio Meron</a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav__drop">
+          <a href="portfolio.html" class="is-active">Portfolios</a>
+          <div class="nav__drop-menu">
+            <a href="interior-design.html">Interior Design</a>
+            <a href="photography.html">Photography</a>
+          </div>
+        </li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="social-media.html">Social Media</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolios</a>
+    <a href="interior-design.html">Interior Design</a>
+    <a href="photography.html">Photography</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="social-media.html">Social Media</a>
+  </div>
+
+  <!-- ── Page Hero ──────────────────────────────────────── -->
+  <header class="page-hero">
+    <div class="page-hero__inner">
+      <span class="eyebrow eyebrow--light">My Work</span>
+      <h1>Portfolios</h1>
+      <p>Interior design, creative direction, set design, photography, and visual storytelling — all under one roof.</p>
+    </div>
+  </header>
+
+  <!-- ── Intro ──────────────────────────────────────────── -->
+  <div class="portfolio-intro">
+    <span class="eyebrow">Explore</span>
+    <h2>A Multi-Disciplinary Creative Practice</h2>
+    <p>Every project starts with a conversation and ends with something that feels unmistakably you. Browse the work below.</p>
+  </div>
+
+  <!-- ── Portfolio Cards ────────────────────────────────── -->
+  <section class="section" style="padding-top:1rem;">
+    <div class="portfolio-layout">
+
+      <a href="interior-design.html" class="portfolio-card">
+        <div class="ph" data-label="Interior Design" style="aspect-ratio:4/5;"></div>
+        <div class="portfolio-card__info">
+          <h3>Interior Design</h3>
+          <p>Residential &amp; Commercial Spaces</p>
+        </div>
+      </a>
+
+      <a href="photography.html" class="portfolio-card">
+        <div class="ph" data-label="Photography" style="aspect-ratio:4/5;"></div>
+        <div class="portfolio-card__info">
+          <h3>Photography</h3>
+          <p>Brand · Event · Lifestyle</p>
+        </div>
+      </a>
+
+      <a href="index.html#services" class="portfolio-card">
+        <div class="ph" data-label="Set Design" style="aspect-ratio:4/5;"></div>
+        <div class="portfolio-card__info">
+          <h3>Set Design</h3>
+          <p>Live Events &amp; Brand Activations</p>
+        </div>
+      </a>
+
+      <a href="social-media.html" class="portfolio-card">
+        <div class="ph" data-label="Social Media" style="aspect-ratio:4/5;"></div>
+        <div class="portfolio-card__info">
+          <h3>Social Media &amp; Content</h3>
+          <p>Short-Form Video · UGC · Brand Collabs</p>
+        </div>
+      </a>
+
+      <a href="index.html#services" class="portfolio-card">
+        <div class="ph" data-label="Creative Direction" style="aspect-ratio:21/9;"></div>
+        <div class="portfolio-card__info">
+          <h3>Creative Direction</h3>
+          <p>Visual Storytelling for Brands &amp; Individuals</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ── CTA ────────────────────────────────────────────── -->
+  <section class="cta-section">
+    <h2>Want to Collaborate?</h2>
+    <p>I take on a limited number of projects each season. Reach out early to secure your spot.</p>
+    <a href="mailto:hello@meronsiyoum.com" class="btn">Work With Me</a>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__logo">Studio Meron</div>
+    <nav class="footer__links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolios</a>
+      <a href="interior-design.html">Interior Design</a>
+      <a href="photography.html">Photography</a>
+      <a href="social-media.html">Social Media</a>
+    </nav>
+    <p class="footer__copy">© 2025 Studio Meron. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
