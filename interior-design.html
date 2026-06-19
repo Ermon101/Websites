@@ -6,6 +6,13 @@
   <title>Denver Interior Design Portfolio | Studio Meron</title>
   <meta name="description" content="My favorite interior decorating projects I have done since 2020.">
   <link rel="stylesheet" href="css/main.css">
+  <style>
+    .id-intro { max-width: 640px; margin: 0 auto; text-align: center; padding: 4rem 2rem 1rem; }
+    .id-intro p { color: #555; font-size: 0.98rem; line-height: 1.8; }
+    .id-services { max-width: 640px; margin: 0 auto; text-align: center; padding: 3rem 2rem; }
+    .id-services p { color: #555; font-size: 0.95rem; line-height: 1.8; }
+    .id-cta { display: flex; gap: 1rem; justify-content: center; margin: 2rem 0; }
+  </style>
 </head>
 <body>
 
@@ -14,17 +21,29 @@
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">Studio Meron</a>
       <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
+        <li class="nav__drop">
+          <a href="index.html">Home</a>
+          <div class="nav__drop-menu">
+            <a href="index.html#about">About</a>
+          </div>
+        </li>
         <li class="nav__drop">
           <a href="portfolio.html" class="is-active">Portfolios</a>
           <div class="nav__drop-menu">
-            <a href="interior-design.html">Interior Design</a>
             <a href="photography.html">Photography</a>
+            <a href="interior-design.html">Interior Design</a>
+            <a href="social-media.html">Content Creation</a>
           </div>
         </li>
-        <li><a href="index.html#services">Services</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="social-media.html">Social Media</a></li>
+        <li class="nav__drop">
+          <a href="index.html#services">Services</a>
+          <div class="nav__drop-menu">
+            <a href="index.html#services">Interior Design</a>
+            <a href="index.html#services">Photography</a>
+            <a href="index.html#services">Content Creation</a>
+          </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -34,68 +53,203 @@
 
   <div class="nav-mobile">
     <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
     <a href="portfolio.html">Portfolios</a>
-    <a href="interior-design.html">Interior Design</a>
     <a href="photography.html">Photography</a>
+    <a href="interior-design.html">Interior Design</a>
+    <a href="social-media.html">Content Creation</a>
     <a href="index.html#services">Services</a>
-    <a href="index.html#contact">Contact</a>
-    <a href="social-media.html">Social Media</a>
+    <a href="contact.html">Contact</a>
   </div>
 
   <!-- ── Page Hero ──────────────────────────────────────── -->
   <header class="page-hero">
     <div class="page-hero__inner">
       <span class="eyebrow eyebrow--light">Portfolio</span>
-      <h1>Interior<br>Design</h1>
-      <p>My favorite interior decorating projects since 2020 — spaces designed to feel as good as they look.</p>
+      <h1>Interior Design</h1>
     </div>
   </header>
 
-  <!-- ── Gallery ────────────────────────────────────────── -->
-  <section class="section">
+  <div class="id-intro">
+    <p>Interior design is arguably one of the most immersive forms of art. Since 2020, I have been working to understand the power of design through several residential projects. Here, I highlight those room transformations through intentional design choices.</p>
+  </div>
+
+  <!-- ── Galleries ──────────────────────────────────────── -->
+  <section class="section" style="padding-top:2rem;">
     <div class="container">
 
-      <!-- Featured project -->
-      <div style="margin-bottom:0.75rem;">
-        <div class="ph" data-label="Featured Project" style="aspect-ratio:16/7;border-radius:4px;"></div>
+      <!-- WILLOW -->
+      <div class="gallery-project">
+        <div class="gallery-project__head">
+          <span class="gallery-project__loc">Residential, Denver, CO</span>
+          <h3>Willow</h3>
+          <p class="gallery-project__desc">A modern-minimalist bedroom redesign that prioritizes an open flow. Soft tones and clean lines helped achieve an airy environment perfect for relaxation.</p>
+        </div>
+        <div class="gallery-grid--auto">
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_dd4b2be7ffc84d19bebc7efb75d191a5~mv2.jpg" alt="project willow — master bedroom">
+            <p class="gallery-item__cap">project willow</p>
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_3ee6d712a86a4cf59616cde75dec384c~mv2.jpg" alt="living room">
+            <p class="gallery-item__cap">living room</p>
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_e0914aa42d9a49daac27ec73f0bf55e1~mv2.jpg" alt="Willow project detail">
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_442658d037634eb185d8c394d749d963~mv2.jpg" alt="Willow project detail">
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_0726925524d447d7a158533691b80fc0~mv2.jpg" alt="Willow project detail">
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_250dd6ba5ca24ba9a1c1d9732128b1f7~mv2.png" alt="project mood board — warm, moody, & charcoal">
+            <p class="gallery-item__cap">project mood board — warm, moody, &amp; charcoal</p>
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_ed84f155b8284f7ba4205d8813711686~mv2.jpg" alt="Primary Bedroom — before">
+            <p class="gallery-item__cap">Primary Bedroom — BEFORE</p>
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_86362987ef1d474184d41fab5edcf143~mv2.jpg" alt="Living Room — before">
+            <p class="gallery-item__cap">Living Room — BEFORE</p>
+          </div>
+        </div>
       </div>
 
-      <!-- Grid -->
-      <div class="gallery-grid">
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project — Living Room"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project — Bedroom"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project — Kitchen"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project — Dining Room"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project — Office"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project — Entryway"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project — Bathroom"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project — Studio"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project — Outdoor"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project — Nursery"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project — Lounge"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project — Detail"></div></div>
+      <!-- SOFTENED GREEN -->
+      <div class="gallery-project">
+        <div class="gallery-project__head">
+          <span class="gallery-project__loc">Residential, Aurora, CO</span>
+          <h3>Softened Green</h3>
+        </div>
+        <div class="gallery-grid--auto">
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_0921a778729a4b6aa9e3e014fda7ec8f~mv2.jpeg" alt="Project softened green — modern-minimalist bedroom redesign">
+            <p class="gallery-item__cap">Project softened green — modern-minimalist bedroom redesign that prioritizes an open flow</p>
+          </div>
+          <a class="gallery-item gallery-item--video" href="https://www.instagram.com/reel/Cn-xJbprVPA/?utm_source=ig_web_copy_link&amp;igsh=enBoYzF1djczcWts" target="_blank" rel="noreferrer noopener">
+            <img src="https://static.wixstatic.com/media/363305_e31b0c3fa74149678df5d80f1525fce3~mv2.png" alt="reels painting tutorial">
+            <p class="gallery-item__cap">reels painting tutorial — a long form reels tutorial for my interior design page</p>
+          </a>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_a7047d173c464b319149f85573a46892~mv2.jpg" alt="gallery wall featuring clients' photography">
+            <p class="gallery-item__cap">gallery wall featuring clients' photography — it's important to feel a connection to the art in your space, which is why I encouraged my client to use film from her travels.</p>
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_e5d6177ff08d4666800040ef7d04f52a~mv2.jpeg" alt="Softened Green project detail">
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_5fbddeccb385423d9385404d934a1b22~mv2.jpeg" alt="Softened Green project detail">
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_3237e60e3171421daa2d698e32a9a348~mv2.jpg" alt="Softened Green project detail">
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_a70c257a76434edb8dab2915289d575e~mv2.jpg" alt="softened green paint">
+            <p class="gallery-item__cap">softened green paint</p>
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_6aa902dfe9e846b0abe7aa59d3c7821f~mv2.jpg" alt="Softened Green project detail">
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_f927c13525e24c63b54145037622a46e~mv2.jpg" alt="Softened Green project detail">
+          </div>
+        </div>
       </div>
+
+      <!-- PERSONAL DORM -->
+      <div class="gallery-project">
+        <div class="gallery-project__head">
+          <span class="gallery-project__loc">Residential, Fort Collins, CO</span>
+          <h3>Personal Dorm</h3>
+          <p class="gallery-project__desc">This personal redesign was documented on my <a href="https://www.instagram.com/reel/ClZ7PM4Mrl9/?utm_source=ig_web_copy_link&amp;igsh=ajVzMGlycm44eHAx" target="_blank" rel="noreferrer noopener" style="color:var(--orange);text-decoration:underline;">Instagram</a> for an assignment, which later helped me book my first client. It's eclectic, colorful, and fresh.</p>
+        </div>
+        <div class="gallery-grid--auto">
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_a47862ee8b2c46939a04fea79f5fa7df~mv2.jpeg" alt="my first documented project">
+            <p class="gallery-item__cap">my first documented project — one of my classes had students pick a topic to make a multimedia project for, so I chose interior design. I documented my journey of decorating on a budget, which landed me my first client.</p>
+          </div>
+          <div class="gallery-item gallery-item--video">
+            <img src="https://static.wixstatic.com/media/363305_8e4a8734c71a4acf98c13ea984fefd3f~mv2.png" alt="sneak peak video">
+            <p class="gallery-item__cap">sneak peak</p>
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_028c46c0ceda496e934602c0bd08b479~mv2.jpg" alt="Personal Dorm project detail">
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_43d05ecb4e8d476092164fe305d34c03~mv2.jpg" alt="my first gallery wall">
+            <p class="gallery-item__cap">my first gallery wall</p>
+          </div>
+          <div class="gallery-item ph ph--video" data-label="Video"></div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_df90645e6a1d4e2eb6db38c10af14885~mv2.jpg" alt="before pictures">
+            <p class="gallery-item__cap">before pictures</p>
+          </div>
+          <div class="gallery-item">
+            <img src="https://static.wixstatic.com/media/363305_109ae0616f4f414abbe7ba293a087289~mv2.jpg" alt="before pictures">
+            <p class="gallery-item__cap">before pictures</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOOD BOARDS & MOCKUPS -->
+      <div class="gallery-project">
+        <div class="gallery-project__head">
+          <span class="gallery-project__loc">Space Planning &amp; Design Choices</span>
+          <h3>Mood Boards &amp; Mockups</h3>
+        </div>
+        <div class="gallery-grid--auto">
+          <div class="gallery-item"><img src="https://static.wixstatic.com/media/363305_4d8fd139d8814f51aaaaade784401494~mv2.jpg" alt="mood board"></div>
+          <div class="gallery-item"><img src="https://static.wixstatic.com/media/363305_f3c414e5140c497ea9bc6fc8e242bdd4~mv2.png" alt="mood board"></div>
+          <div class="gallery-item"><img src="https://static.wixstatic.com/media/363305_5c566ad8cdb24bffa8526f18b11a23be~mv2.png" alt="mood board"></div>
+          <div class="gallery-item"><img src="https://static.wixstatic.com/media/363305_d9ac3e43482149cbad8794b69b72835f~mv2.jpg" alt="mood board"></div>
+          <div class="gallery-item"><img src="https://static.wixstatic.com/media/363305_d0ce8ae5de6d446cb74e529b7c7929f6~mv2.png" alt="mood board"></div>
+          <div class="gallery-item"><img src="https://static.wixstatic.com/media/363305_4afb58b49fef4916b8383da6caf10399~mv2.png" alt="mood board"></div>
+        </div>
+      </div>
+
     </div>
   </section>
+
+  <!-- ── Services Callout ─────────────────────────────────── -->
+  <div class="id-services">
+    <span class="eyebrow">Design Process</span>
+    <p>It can be tough to visualize what a space will look like during the design process. Using sketches and detailed mood boards, I help clients connect with the vision.</p>
+    <div class="id-cta">
+      <a href="photography.html" class="btn">photography</a>
+      <a href="social-media.html" class="btn">social media</a>
+    </div>
+  </div>
 
   <!-- ── CTA ────────────────────────────────────────────── -->
   <section class="cta-section">
     <h2>Ready to Transform Your Space?</h2>
     <p>Let's work together to create a space that's uniquely yours. Residential and commercial projects welcome.</p>
-    <a href="mailto:hello@meronsiyoum.com" class="btn">Start a Project</a>
+    <a href="contact.html" class="btn">Start a Project</a>
   </section>
 
   <!-- ── Footer ─────────────────────────────────────────── -->
   <footer class="footer">
     <div class="footer__logo">Studio Meron</div>
+    <div class="footer__social">
+      <a href="https://www.instagram.com/studiomeron/" target="_blank" rel="noreferrer noopener" aria-label="Instagram"><img src="https://static.wixstatic.com/media/11062b_cef3b719166a4815b446d4dcfcb6120d~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_cef3b719166a4815b446d4dcfcb6120d~mv2.png" alt="Instagram"></a>
+      <a href="https://merons.substack.com/" target="_blank" rel="noreferrer noopener" aria-label="Substack"><img src="https://static.wixstatic.com/media/363305_c7fda714f14d4166859daf11c0e61fcd~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/363305_c7fda714f14d4166859daf11c0e61fcd~mv2.png" alt="Substack"></a>
+      <a href="https://www.linkedin.com/in/meronsiyoum/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn"><img src="https://static.wixstatic.com/media/11062b_b5690303a8ff470e9b1c03a24aff140b~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_b5690303a8ff470e9b1c03a24aff140b~mv2.png" alt="LinkedIn"></a>
+      <a href="https://www.pinterest.com/meronsiyoum/" target="_blank" rel="noreferrer noopener" aria-label="Pinterest"><img src="https://static.wixstatic.com/media/11062b_79e4793290f44db59b5c826bb4c78d2b~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_79e4793290f44db59b5c826bb4c78d2b~mv2.png" alt="Pinterest"></a>
+      <a href="https://www.tiktok.com/@meronsiyoum" target="_blank" rel="noreferrer noopener" aria-label="TikTok"><img src="https://static.wixstatic.com/media/11062b_3a1a34a22c10436caac05a4e0f6a876e~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_3a1a34a22c10436caac05a4e0f6a876e~mv2.png" alt="TikTok"></a>
+    </div>
     <nav class="footer__links">
       <a href="index.html">Home</a>
       <a href="portfolio.html">Portfolios</a>
       <a href="interior-design.html">Interior Design</a>
       <a href="photography.html">Photography</a>
       <a href="social-media.html">Social Media</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <p class="footer__copy">© 2025 Studio Meron. All rights reserved.</p>
+    <a href="mailto:Meronsiyoum13@gmail.com" class="footer__email">Meronsiyoum13@gmail.com</a>
+    <p class="footer__copy">Copyright 2026 Meron Siyoum.</p>
   </footer>
 
   <script src="js/main.js"></script>

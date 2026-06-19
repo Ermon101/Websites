@@ -3,11 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Denver Interior Designer, Creative Director & Set Designer | Studio Meron</title>
+  <title>Denver Interior Designer, Creative Director &amp; Set Designer | Studio Meron</title>
   <meta name="description" content="Denver-based creative director, interior decorator, and set designer helping brands, businesses, and homeowners create memorable spaces, experiences, and visual stories.">
-  <meta property="og:title" content="Studio Meron">
-  <meta property="og:description" content="Denver-based creative director, interior decorator, and set designer.">
   <link rel="stylesheet" href="css/main.css">
+  <style>
+    .hero__hey { width: 130px; margin: 0 auto 1.2rem; }
+    .hero__hey img { width: 100%; }
+    .hero__photo {
+      width: 160px; height: 175px; border-radius: var(--r);
+      overflow: hidden; margin: 2rem auto 0;
+    }
+    .hero__photo img { width: 100%; height: 100%; object-fit: cover; }
+    .hero__cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+
+    .about-grid img { border-radius: var(--r); width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+
+    .cube-block { text-align: center; padding: 3rem 2rem; }
+    .cube-block a { display: inline-block; }
+    .cube-block img { width: 110px; margin: 0 auto; transition: transform 0.6s ease; }
+    .cube-block a:hover img { transform: rotate(25deg) scale(1.1); }
+    .cube-block p { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-top: 0.8rem; }
+  </style>
 </head>
 <body>
 
@@ -16,17 +32,29 @@
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">Studio Meron</a>
       <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
+        <li class="nav__drop">
+          <a href="index.html" class="is-active">Home</a>
+          <div class="nav__drop-menu">
+            <a href="index.html#about">About</a>
+          </div>
+        </li>
         <li class="nav__drop">
           <a href="portfolio.html">Portfolios</a>
           <div class="nav__drop-menu">
-            <a href="interior-design.html">Interior Design</a>
             <a href="photography.html">Photography</a>
+            <a href="interior-design.html">Interior Design</a>
+            <a href="social-media.html">Content Creation</a>
           </div>
         </li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="social-media.html">Social Media</a></li>
+        <li class="nav__drop">
+          <a href="index.html#services">Services</a>
+          <div class="nav__drop-menu">
+            <a href="index.html#services">Interior Design</a>
+            <a href="index.html#services">Photography</a>
+            <a href="index.html#services">Content Creation</a>
+          </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -34,40 +62,63 @@
     </div>
   </nav>
 
-  <!-- Mobile nav -->
   <div class="nav-mobile">
     <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
     <a href="portfolio.html">Portfolios</a>
-    <a href="interior-design.html">Interior Design</a>
     <a href="photography.html">Photography</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <a href="social-media.html">Social Media</a>
+    <a href="interior-design.html">Interior Design</a>
+    <a href="social-media.html">Content Creation</a>
+    <a href="index.html#services">Services</a>
+    <a href="contact.html">Contact</a>
   </div>
 
   <!-- ── Hero ───────────────────────────────────────────── -->
-  <section class="hero">
-    <div class="hero__bg">
-      <div class="ph ph--16-9" data-label="Hero Image" style="height:100%;min-height:100vh;border-radius:0;"></div>
+  <section class="hero" style="min-height:auto;background:var(--bg);padding:calc(var(--nav-h) + 3rem) 2rem 4rem;">
+    <div class="hero__content" style="color:var(--text);position:static;padding:0;">
+      <div class="hero__hey">
+        <img src="https://static.wixstatic.com/media/363305_4de0c7e70b8d4ffeb9c22f02d7d6a94f~mv2.png/v1/crop/x_0,y_442,w_1469,h_578/fill/w_210,h_82,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Untitled_Artwork_edited.png" alt="the word &quot;hey&quot; drawn in cursive">
+      </div>
+      <h1 class="hero__title" style="font-size:clamp(2.6rem,8vw,5.5rem);">MERON<br>SIYOUM</h1>
+      <p class="hero__sub" style="color:#555;">Denver-based creative director and interior designer working for people, brands, and stories that deserve intention.</p>
+      <p style="font-size:0.85rem;letter-spacing:0.05em;color:var(--orange);margin-bottom:1.5rem;">☼ interiors ☼ project planning ☼ set design ☼ photography ☼ content creation ☼</p>
+      <div class="hero__cta">
+        <a href="portfolio.html" class="btn btn--orange">view portfolios</a>
+        <a href="contact.html" class="btn">book me</a>
+      </div>
+      <div class="hero__photo">
+        <img src="https://static.wixstatic.com/media/363305_cfafba38cf9e4937bc9570b394291aaf~mv2.jpeg/v1/crop/x_0,y_275,w_1872,h_2221/fill/w_294,h_321,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_5219.jpeg" alt="Meron standing in a field smiling at the camera">
+      </div>
     </div>
-    <div class="hero__content">
-      <span class="eyebrow eyebrow--light">Denver, Colorado</span>
-      <h1 class="hero__title">Studio<br>Meron</h1>
-      <p class="hero__sub">Interior Designer &nbsp;·&nbsp; Creative Director &nbsp;·&nbsp; Set Designer</p>
-      <a href="portfolio.html" class="btn btn--white">View Portfolios</a>
+  </section>
+
+  <!-- ── Portfolio Teaser ───────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="portfolio-cards" style="grid-template-columns:repeat(3,1fr);">
+        <a href="photography.html" class="portfolio-card">
+          <img src="https://static.wixstatic.com/media/363305_6382bba31c864b62947056eefa83f9ce~mv2.png/v1/fill/w_306,h_397,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Untitled%20(Real%20Estate%20Flyer).png" alt="a man and a woman holding hands as they walk up stairs, with the words &quot;photography portfolio&quot; typed over it" style="aspect-ratio:306/397;">
+        </a>
+        <a href="interior-design.html" class="portfolio-card">
+          <img src="https://static.wixstatic.com/media/363305_c98adde2f1e84ad0b26b1072465d50eb~mv2.png/v1/fill/w_306,h_397,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/363305_c98adde2f1e84ad0b26b1072465d50eb~mv2.png" alt="a golden gallery wall with the words &quot;interior design portfolio&quot; typed over it" style="aspect-ratio:306/397;">
+        </a>
+        <a href="social-media.html" class="portfolio-card">
+          <img src="https://static.wixstatic.com/media/363305_cdbf173e569d43bb8d5ee446f2582c41~mv2.png/v1/fill/w_306,h_397,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/363305_cdbf173e569d43bb8d5ee446f2582c41~mv2.png" alt="Meron's side profile with the words &quot;social media portfolio&quot; typed over it" style="aspect-ratio:306/397;">
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- ── About ──────────────────────────────────────────── -->
-  <section class="section">
+  <section class="section" id="about">
     <div class="about-grid">
-      <div class="ph ph--tall" data-label="About Image"></div>
+      <img src="https://static.wixstatic.com/media/363305_cfafba38cf9e4937bc9570b394291aaf~mv2.jpeg/v1/crop/x_0,y_275,w_1872,h_2221/fill/w_294,h_321,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_5219.jpeg" alt="Meron standing in a field smiling at the camera">
       <div>
         <span class="eyebrow">About</span>
-        <h2>Creative Direction<br>With Purpose</h2>
-        <p>Denver-based creative director, interior decorator, and set designer helping brands, businesses, and homeowners create memorable spaces, experiences, and visual stories.</p>
-        <p>Since 2020, I've been turning ideas into environments — crafting interiors, set designs, and visual narratives that leave a lasting impression.</p>
-        <a href="portfolio.html" class="btn" style="margin-top:1rem;">See My Work</a>
+        <h2>Meron Siyoum</h2>
+        <p>Meron Siyoum is a Denver interior designer, creative director, photographer, and content creator serving clients throughout Colorado and beyond. She specializes in residential interior styling, set design, brand content creation, and creative project planning.</p>
+        <p>Meron uses her love for media production to decorate various interior spaces professionally and documents her journey on Instagram. Follow along here:</p>
+        <a href="https://www.instagram.com/studiomeron/" target="_blank" rel="noreferrer noopener" class="btn btn--orange">@studiomeron</a>
       </div>
     </div>
   </section>
@@ -75,69 +126,59 @@
   <!-- ── Services ───────────────────────────────────────── -->
   <section class="section section--dark" id="services">
     <div class="container">
-      <div style="text-align:center;margin-bottom:3rem;">
-        <span class="eyebrow eyebrow--light">What I Do</span>
-        <h2 style="font-size:clamp(2rem,4vw,3rem);margin-top:0.4rem;">Services</h2>
-      </div>
+      <span class="eyebrow eyebrow--light">What I Do</span>
+      <h2 style="color:var(--white);margin-bottom:3rem;font-size:clamp(2rem,4vw,3rem);">Services</h2>
       <div class="services-grid">
         <div class="service-card">
           <div class="ph ph--wide" data-label="Interior Design"></div>
           <h3>Interior Design</h3>
-          <p>Creating beautiful, functional spaces that reflect your personality and lifestyle — from concept to completion.</p>
-          <a href="interior-design.html">View Work →</a>
+          <p>Residential styling, room transformations, and mood-board-driven design for clients across Colorado.</p>
+          <a href="interior-design.html">View Portfolio →</a>
         </div>
         <div class="service-card">
           <div class="ph ph--wide" data-label="Photography"></div>
           <h3>Photography</h3>
-          <p>Brand, event, and lifestyle photography that captures authentic moments and tells your story with clarity.</p>
-          <a href="photography.html">View Work →</a>
+          <p>Event, brand, and lifestyle photography that captures moments with intention.</p>
+          <a href="photography.html">View Portfolio →</a>
         </div>
         <div class="service-card">
           <div class="ph ph--wide" data-label="Content Creation"></div>
-          <h3>Social Media & Content</h3>
-          <p>Short-form video content and creative direction for brands looking to engage audiences and grow online.</p>
-          <a href="social-media.html">View Work →</a>
+          <h3>Content Creation</h3>
+          <p>Short-form video, UGC, and social media content for brands and live events.</p>
+          <a href="social-media.html">View Portfolio →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Selected Work ──────────────────────────────────── -->
-  <section class="section">
-    <div class="container">
-      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2rem;">
-        <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);">Selected Work</h2>
-        <a href="portfolio.html" class="eyebrow" style="color:var(--orange);">View All →</a>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project 1"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project 2"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project 3"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project 4"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project 5"></div></div>
-        <div class="gallery-item"><div class="ph ph--tall" data-label="Project 6"></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Contact CTA ────────────────────────────────────── -->
-  <section class="cta-section" id="contact">
-    <h2>Let's Work Together</h2>
-    <p>Whether you're looking to redesign your space, capture your brand, or grow your social presence — let's make it happen.</p>
-    <a href="mailto:hello@meronsiyoum.com" class="btn">Get In Touch</a>
-  </section>
+  <!-- ── Playroom / Rubik's Cube ──────────────────────────── -->
+  <div class="cube-block">
+    <a href="https://www.meronsiyoum.com/playroom" target="_blank" rel="noreferrer noopener" aria-label="Rubik's Cube">
+      <img src="https://static.wixstatic.com/media/a3c153_b34adfbb2154432cb66b961db0c099b3~mv2.png/v1/fill/w_127,h_127,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3c153_b34adfbb2154432cb66b961db0c099b3~mv2.png" alt="Rubik's Cube">
+    </a>
+    <p>just for fun — the playroom</p>
+  </div>
 
   <!-- ── Footer ─────────────────────────────────────────── -->
   <footer class="footer">
     <div class="footer__logo">Studio Meron</div>
+    <div class="footer__social">
+      <a href="https://www.instagram.com/studiomeron/" target="_blank" rel="noreferrer noopener" aria-label="Instagram"><img src="https://static.wixstatic.com/media/11062b_cef3b719166a4815b446d4dcfcb6120d~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_cef3b719166a4815b446d4dcfcb6120d~mv2.png" alt="Instagram"></a>
+      <a href="https://merons.substack.com/" target="_blank" rel="noreferrer noopener" aria-label="Substack"><img src="https://static.wixstatic.com/media/363305_c7fda714f14d4166859daf11c0e61fcd~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/363305_c7fda714f14d4166859daf11c0e61fcd~mv2.png" alt="Substack"></a>
+      <a href="https://www.linkedin.com/in/meronsiyoum/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn"><img src="https://static.wixstatic.com/media/11062b_b5690303a8ff470e9b1c03a24aff140b~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_b5690303a8ff470e9b1c03a24aff140b~mv2.png" alt="LinkedIn"></a>
+      <a href="https://www.pinterest.com/meronsiyoum/" target="_blank" rel="noreferrer noopener" aria-label="Pinterest"><img src="https://static.wixstatic.com/media/11062b_79e4793290f44db59b5c826bb4c78d2b~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_79e4793290f44db59b5c826bb4c78d2b~mv2.png" alt="Pinterest"></a>
+      <a href="https://www.tiktok.com/@meronsiyoum" target="_blank" rel="noreferrer noopener" aria-label="TikTok"><img src="https://static.wixstatic.com/media/11062b_3a1a34a22c10436caac05a4e0f6a876e~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_3a1a34a22c10436caac05a4e0f6a876e~mv2.png" alt="TikTok"></a>
+    </div>
     <nav class="footer__links">
       <a href="index.html">Home</a>
       <a href="portfolio.html">Portfolios</a>
       <a href="interior-design.html">Interior Design</a>
       <a href="photography.html">Photography</a>
       <a href="social-media.html">Social Media</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <p class="footer__copy">© 2025 Studio Meron. All rights reserved.</p>
+    <a href="mailto:Meronsiyoum13@gmail.com" class="footer__email">Meronsiyoum13@gmail.com</a>
+    <p class="footer__copy">Copyright 2026 Meron Siyoum.</p>
   </footer>
 
   <script src="js/main.js"></script>
