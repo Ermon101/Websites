@@ -3,22 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolios | Interior Design, Set Design &amp; Creative Direction | Studio Meron</title>
-  <meta name="description" content="Explore Studio Meron's portfolio featuring interior design, creative direction, set design, photography, and visual storytelling projects for brands and individuals.">
+  <title>Contact | Studio Meron</title>
+  <meta name="description" content="Get in touch with Studio Meron for interior design, photography, and content creation projects.">
   <link rel="stylesheet" href="css/main.css">
-  <style>
-    .portfolio-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto;
-      gap: 1rem;
-      max-width: var(--max-w);
-      margin: 0 auto;
-    }
-    @media (max-width: 600px) {
-      .portfolio-layout { grid-template-columns: 1fr; }
-    }
-  </style>
 </head>
 <body>
 
@@ -34,7 +21,7 @@
           </div>
         </li>
         <li class="nav__drop">
-          <a href="portfolio.html" class="is-active">Portfolios</a>
+          <a href="portfolio.html">Portfolios</a>
           <div class="nav__drop-menu">
             <a href="photography.html">Photography</a>
             <a href="interior-design.html">Interior Design</a>
@@ -49,7 +36,7 @@
             <a href="index.html#services">Content Creation</a>
           </div>
         </li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="is-active">Contact</a></li>
       </ul>
       <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -71,48 +58,47 @@
   <!-- ── Page Hero ──────────────────────────────────────── -->
   <header class="page-hero">
     <div class="page-hero__inner">
-      <span class="eyebrow eyebrow--light">My Work</span>
-      <h1>Portfolios</h1>
+      <span class="eyebrow eyebrow--light">Get In Touch</span>
+      <h1>Contact</h1>
+      <p>Have a project in mind? Fill out the form below and I'll get back to you.</p>
     </div>
   </header>
 
-  <!-- ── Portfolio Cards ────────────────────────────────── -->
+  <!-- ── Contact Form ─────────────────────────────────────── -->
   <section class="section">
-    <div class="portfolio-layout">
-
-      <a href="photography.html" class="portfolio-card">
-        <img src="https://static.wixstatic.com/media/363305_6382bba31c864b62947056eefa83f9ce~mv2.png/v1/fill/w_391,h_507,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Untitled%20(Real%20Estate%20Flyer).png" alt="a man and a woman holding hands as they walk up steps, &quot;photography portfolio&quot; is typed over it" style="aspect-ratio:4/5;">
-        <div class="portfolio-card__info">
-          <h3>Photography</h3>
-        </div>
-      </a>
-
-      <a href="interior-design.html" class="portfolio-card">
-        <img src="https://static.wixstatic.com/media/363305_c98adde2f1e84ad0b26b1072465d50eb~mv2.png/v1/fill/w_391,h_507,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/363305_c98adde2f1e84ad0b26b1072465d50eb~mv2.png" alt="gold framed gallery wall used as a background with &quot;Interior design portfolio&quot; typed on it" style="aspect-ratio:4/5;">
-        <div class="portfolio-card__info">
-          <h3>Interior Design</h3>
-        </div>
-      </a>
-
-      <a href="https://www.meronsiyoum.com/playroom" target="_blank" rel="noreferrer noopener" class="portfolio-card portfolio-cube" aria-label="Rubik's Cube" style="aspect-ratio:4/5;">
-        <img src="https://static.wixstatic.com/media/a3c153_b34adfbb2154432cb66b961db0c099b3~mv2.png/v1/fill/w_127,h_127,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3c153_b34adfbb2154432cb66b961db0c099b3~mv2.png" alt="Rubik's Cube">
-      </a>
-
-      <a href="social-media.html" class="portfolio-card">
-        <img src="https://static.wixstatic.com/media/363305_cdbf173e569d43bb8d5ee446f2582c41~mv2.png/v1/fill/w_391,h_507,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/363305_cdbf173e569d43bb8d5ee446f2582c41~mv2.png" alt="meron's side profile, with &quot;Social media portfolio&quot; typed on it" style="aspect-ratio:4/5;">
-        <div class="portfolio-card__info">
-          <h3>Social Media</h3>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- ── CTA ────────────────────────────────────────────── -->
-  <section class="cta-section">
-    <h2>Want to Collaborate?</h2>
-    <p>I take on a limited number of projects each season. Reach out early to secure your spot.</p>
-    <a href="contact.html" class="btn">Work With Me</a>
+    <form class="contact-form">
+      <div class="field">
+        <label for="first-name">First name</label>
+        <input type="text" id="first-name" name="first-name" required>
+      </div>
+      <div class="field">
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name" name="last-name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+      <div class="field field--full">
+        <label for="service">Choose a service</label>
+        <select id="service" name="service">
+          <option value="">Choose a service</option>
+          <option value="Interior Design">Interior Design</option>
+          <option value="Photography">Photography</option>
+          <option value="Content Creation">Content Creation</option>
+        </select>
+      </div>
+      <div class="field field--full">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn--orange">Submit</button>
+      <div class="contact-form__success">Thanks for submitting!</div>
+    </form>
   </section>
 
   <!-- ── Footer ─────────────────────────────────────────── -->

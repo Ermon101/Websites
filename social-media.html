@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Social Media & Content Creation | Studio Meron</title>
-  <meta name="description" content="Short-form video content, UGC, montages, and social media work by Studio Meron — travel, design, and lifestyle.">
+  <title>Social Media | Studio Meron</title>
+  <meta name="description" content="Creative portfolio for photography, interior design, and social media — short-form video content, montages, and brand collaborations by Meron Siyoum.">
   <link rel="stylesheet" href="css/main.css">
   <style>
     /* Page-specific overrides */
@@ -17,6 +17,13 @@
       height: 5px;
       background: linear-gradient(to right, var(--orange), var(--lime), var(--olive));
     }
+
+    .sm-note {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0.5rem 0 0;
+    }
   </style>
 </head>
 <body>
@@ -26,17 +33,29 @@
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">Studio Meron</a>
       <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
         <li class="nav__drop">
-          <a href="portfolio.html">Portfolios</a>
+          <a href="index.html">Home</a>
           <div class="nav__drop-menu">
-            <a href="interior-design.html">Interior Design</a>
-            <a href="photography.html">Photography</a>
+            <a href="index.html#about">About</a>
           </div>
         </li>
-        <li><a href="index.html#services">Services</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="social-media.html" class="is-active">Social Media</a></li>
+        <li class="nav__drop">
+          <a href="portfolio.html" class="is-active">Portfolios</a>
+          <div class="nav__drop-menu">
+            <a href="photography.html">Photography</a>
+            <a href="interior-design.html">Interior Design</a>
+            <a href="social-media.html">Content Creation</a>
+          </div>
+        </li>
+        <li class="nav__drop">
+          <a href="index.html#services">Services</a>
+          <div class="nav__drop-menu">
+            <a href="index.html#services">Interior Design</a>
+            <a href="index.html#services">Photography</a>
+            <a href="index.html#services">Content Creation</a>
+          </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -46,12 +65,13 @@
 
   <div class="nav-mobile">
     <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
     <a href="portfolio.html">Portfolios</a>
-    <a href="interior-design.html">Interior Design</a>
     <a href="photography.html">Photography</a>
+    <a href="interior-design.html">Interior Design</a>
+    <a href="social-media.html">Content Creation</a>
     <a href="index.html#services">Services</a>
-    <a href="index.html#contact">Contact</a>
-    <a href="social-media.html">Social Media</a>
+    <a href="contact.html">Contact</a>
   </div>
 
   <div class="sm-accent-bar"></div>
@@ -69,8 +89,7 @@
         </div>
         <div class="sm-hero__bio">
           <p class="sm-hero__tagline">favorite moments and views 🫶🏾</p>
-          <p>My personal work combines travel, design, and small lifestyle moments to inspire creativity through vibrant short-form videos.</p>
-          <p>Professionally, I have crafted social media content as an Amazon Student Ambassador, event decorator, and for a variety of live events, engaging audiences with different interests.</p>
+          <p>My personal work combines travel, design, and small lifestyle moments to inspire creativity through vibrant short-form videos. Professionally, I have crafted social media content as an Amazon Student Ambassador, event decorator, and for a variety of live events, engaging audiences with different interests.</p>
           <div class="brands">
             <span class="brand-tag">@Amazon Student</span>
             <span class="brand-tag">@Skylar</span>
@@ -116,6 +135,7 @@
         <span class="stat__label">Shares</span>
       </div>
     </div>
+    <p class="sm-note">The 16 source videos for this page live outside this repo — thumbnails below are placeholders until the real clips are added.</p>
   </div>
 
   <!-- ── Tabbed Video Grid ───────────────────────────────── -->
@@ -125,7 +145,6 @@
       <div class="tabs__nav">
         <button class="tab-btn is-active" data-tab="montages">Montages</button>
         <button class="tab-btn" data-tab="trends">Trends &amp; Viral Reels</button>
-        <button class="tab-btn" data-tab="ugc">UGC</button>
         <button class="tab-btn" data-tab="weddings">Weddings &amp; Events</button>
       </div>
 
@@ -136,28 +155,18 @@
             <div class="ph ph--9-16 ph--video" data-label="Video"></div>
             <div class="video-card__meta">
               <p class="video-card__caption">best 22nd birthday of all my lives 🍒🫧🧚🏾‍♀️ — 05|04|2024</p>
-              <span class="video-card__views">1.1M views</span>
             </div>
           </div>
           <div class="video-card">
             <div class="ph ph--9-16 ph--video" data-label="Video"></div>
             <div class="video-card__meta">
               <p class="video-card__caption">yes I made baba a hype video — 4-0 and he scored twice 📸</p>
-              <span class="video-card__views">356K views</span>
             </div>
           </div>
           <div class="video-card">
             <div class="ph ph--9-16 ph--video" data-label="Video"></div>
             <div class="video-card__meta">
-              <p class="video-card__caption">sitting on so many drafts… enjoy! 🥭🍇</p>
-              <span class="video-card__views">99.6K views</span>
-            </div>
-          </div>
-          <div class="video-card">
-            <div class="ph ph--9-16 ph--video" data-label="Video"></div>
-            <div class="video-card__meta">
-              <p class="video-card__caption">summer montage ☀️ travel, moments &amp; good vibes</p>
-              <span class="video-card__views">58.5K views</span>
+              <p class="video-card__caption">sitting on so many drafts… enjoy! 🥭🍇 #açaíbowl #frozenfruit #summer2023 #mangosarethebestfruit</p>
             </div>
           </div>
         </div>
@@ -169,63 +178,13 @@
           <div class="video-card">
             <div class="ph ph--9-16 ph--video" data-label="Video"></div>
             <div class="video-card__meta">
-              <p class="video-card__caption">weekly color: sweet-er weather 🧚 @sally_hansen — nail inspo 💅</p>
-              <span class="video-card__views">3.3M views</span>
+              <p class="video-card__caption">weekly color: sweet-er weather 🧚 @sally_hansen — my next weekly poll is up on my story</p>
             </div>
           </div>
           <div class="video-card">
             <div class="ph ph--9-16 ph--video" data-label="Video"></div>
             <div class="video-card__meta">
-              <p class="video-card__caption">açaí bowl recipe ✨ #açaíbowl #frozenfruit #summer2023</p>
-              <span class="video-card__views">1M views</span>
-            </div>
-          </div>
-          <div class="video-card">
-            <div class="ph ph--9-16 ph--video" data-label="Video"></div>
-            <div class="video-card__meta">
-              <p class="video-card__caption">POV: Colorado sunsets hit different 🌄 #denver #coloradolife</p>
-              <span class="video-card__views">283K views</span>
-            </div>
-          </div>
-          <div class="video-card">
-            <div class="ph ph--9-16 ph--video" data-label="Video"></div>
-            <div class="video-card__meta">
-              <p class="video-card__caption">trending audio + living room makeover = this 🛋️✨</p>
-              <span class="video-card__views">15K views</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- UGC -->
-      <div class="tab-panel" id="tab-ugc">
-        <div class="video-grid">
-          <div class="video-card">
-            <div class="ph ph--9-16 ph--video" data-label="Video"></div>
-            <div class="video-card__meta">
-              <p class="video-card__caption">GIVEAWAY CLOSED — my first ever giveaway 🤭 @skylar fragrance roll on</p>
-              <span class="video-card__views">99.6K views</span>
-            </div>
-          </div>
-          <div class="video-card">
-            <div class="ph ph--9-16 ph--video" data-label="Video"></div>
-            <div class="video-card__meta">
-              <p class="video-card__caption">@living_proof hair care routine — honestly obsessed 💆🏾‍♀️</p>
-              <span class="video-card__views">58.5K views</span>
-            </div>
-          </div>
-          <div class="video-card">
-            <div class="ph ph--9-16 ph--video" data-label="Video"></div>
-            <div class="video-card__meta">
-              <p class="video-card__caption">@primestudent haul — everything I ordered for back to school 📦</p>
-              <span class="video-card__views">15K views</span>
-            </div>
-          </div>
-          <div class="video-card">
-            <div class="ph ph--9-16 ph--video" data-label="Video"></div>
-            <div class="video-card__meta">
-              <p class="video-card__caption">@sambazon açaí pack review — morning routine ready 🍇</p>
-              <span class="video-card__views">752 views</span>
+              <p class="video-card__caption">GIVEAWAY CLOSED — my first ever giveaway 🤭 Interested in getting the travel size @skylar fragrance roll on? Read the instructions below to enter: 1. Tag a CSU friend by tonight 2. Follow me @meronsiyoum and @primestudent</p>
             </div>
           </div>
         </div>
@@ -237,29 +196,25 @@
           <div class="video-card">
             <div class="ph ph--9-16 ph--video" data-label="Video"></div>
             <div class="video-card__meta">
-              <p class="video-card__caption">Ethiopian wedding highlight reel 💛❤️💚 — stunning traditions</p>
-              <span class="video-card__views">356K views</span>
+              <p class="video-card__caption">Wedding highlight reel</p>
             </div>
           </div>
           <div class="video-card">
             <div class="ph ph--9-16 ph--video" data-label="Video"></div>
             <div class="video-card__meta">
-              <p class="video-card__caption">event decor setup timelapse ✨ — from empty room to magic</p>
-              <span class="video-card__views">99.6K views</span>
+              <p class="video-card__caption">Event decor setup timelapse</p>
             </div>
           </div>
           <div class="video-card">
             <div class="ph ph--9-16 ph--video" data-label="Video"></div>
             <div class="video-card__meta">
-              <p class="video-card__caption">bridal party getting ready vibes 💐 — behind the scenes</p>
-              <span class="video-card__views">299 views</span>
+              <p class="video-card__caption">Bridal party prep coverage</p>
             </div>
           </div>
           <div class="video-card">
             <div class="ph ph--9-16 ph--video" data-label="Video"></div>
             <div class="video-card__meta">
-              <p class="video-card__caption">CSU campus event coverage 🎓 — community &amp; connection</p>
-              <span class="video-card__views">939 views</span>
+              <p class="video-card__caption">CSU campus event coverage</p>
             </div>
           </div>
         </div>
@@ -272,20 +227,29 @@
   <section class="cta-section">
     <h2>Let's Create Together</h2>
     <p>Looking for authentic UGC, event coverage, or a social media creative partner? Let's talk.</p>
-    <a href="mailto:hello@meronsiyoum.com" class="btn">Get In Touch</a>
+    <a href="contact.html" class="btn">Get In Touch</a>
   </section>
 
   <!-- ── Footer ─────────────────────────────────────────── -->
   <footer class="footer">
     <div class="footer__logo">Studio Meron</div>
+    <div class="footer__social">
+      <a href="https://www.instagram.com/studiomeron/" target="_blank" rel="noreferrer noopener" aria-label="Instagram"><img src="https://static.wixstatic.com/media/11062b_cef3b719166a4815b446d4dcfcb6120d~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_cef3b719166a4815b446d4dcfcb6120d~mv2.png" alt="Instagram"></a>
+      <a href="https://merons.substack.com/" target="_blank" rel="noreferrer noopener" aria-label="Substack"><img src="https://static.wixstatic.com/media/363305_c7fda714f14d4166859daf11c0e61fcd~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/363305_c7fda714f14d4166859daf11c0e61fcd~mv2.png" alt="Substack"></a>
+      <a href="https://www.linkedin.com/in/meronsiyoum/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn"><img src="https://static.wixstatic.com/media/11062b_b5690303a8ff470e9b1c03a24aff140b~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_b5690303a8ff470e9b1c03a24aff140b~mv2.png" alt="LinkedIn"></a>
+      <a href="https://www.pinterest.com/meronsiyoum/" target="_blank" rel="noreferrer noopener" aria-label="Pinterest"><img src="https://static.wixstatic.com/media/11062b_79e4793290f44db59b5c826bb4c78d2b~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_79e4793290f44db59b5c826bb4c78d2b~mv2.png" alt="Pinterest"></a>
+      <a href="https://www.tiktok.com/@meronsiyoum" target="_blank" rel="noreferrer noopener" aria-label="TikTok"><img src="https://static.wixstatic.com/media/11062b_3a1a34a22c10436caac05a4e0f6a876e~mv2.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_3a1a34a22c10436caac05a4e0f6a876e~mv2.png" alt="TikTok"></a>
+    </div>
     <nav class="footer__links">
       <a href="index.html">Home</a>
       <a href="portfolio.html">Portfolios</a>
       <a href="interior-design.html">Interior Design</a>
       <a href="photography.html">Photography</a>
       <a href="social-media.html">Social Media</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <p class="footer__copy">© 2025 Studio Meron. All rights reserved.</p>
+    <a href="mailto:Meronsiyoum13@gmail.com" class="footer__email">Meronsiyoum13@gmail.com</a>
+    <p class="footer__copy">Copyright 2026 Meron Siyoum.</p>
   </footer>
 
   <script src="js/main.js"></script>

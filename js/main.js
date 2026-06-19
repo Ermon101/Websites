@@ -80,3 +80,14 @@
     io.observe(el);
   });
 })();
+
+/* ── Contact form ──────────────────────────────────────────── */
+(function () {
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    form.classList.add('is-submitted');
+  });
+})();
